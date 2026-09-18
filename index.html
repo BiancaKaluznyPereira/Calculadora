@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="card">
-        <div>
+        <div id="titulo">
             <h1>Minha Calculadora</h1>
         </div>
         <div id="input">
-            <input type="number" placeholder="Primeiro Número">
-            <input type="number" placeholder="Segundo Número">
+            <input type="number" placeholder="Primeiro Numero" id="numero1">
+            <input type="number" placeholder="Segundo Numero" id="numero2">
         </div>
         <div id="botao">
-            <input type="submit" value="+" id="somar">
-            <input type="submit" value="-" id="subtrair">
-            <input type="submit" value="x" id="multiplicar">
-            <input type="submit" value="&#247" id="dividir">
+            <input type="submit" value="+" id="somar" onclick="somar()">
+            <input type="submit" value="-" id="subtrair" onclick="subtrair()">
+            <input type="submit" value="x" id="multiplicar" onclick="multiplicar()">
+            <input type="submit" value="&#247" id="dividir"onclick="dividir()">
         </div>
         <div>
-            <p>Resultado:</p>
+            <p id="resultado">Resultado:</p>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
