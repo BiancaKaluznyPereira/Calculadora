@@ -1,16 +1,19 @@
 body {
+    display: flex;
     background-color: #ccd5ae;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     text-align: center;
     color: #d4a373;
 }
 
 #card {
- width: 30%;
- background-color: #fefae0;
- margin: 0 auto;
- border-radius: 10px;
- padding: 80px;
- margin-top: 200px;
+    width: 30%;
+    background-color: #fefae0;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 80px;
 }
 
 input {
@@ -36,20 +39,60 @@ input {
 #somar{
     background-color: #e9edc9;
     padding: 15px;
-
+    cursor: pointer;
 }
 
 #subtrair{
     background-color: #e9edc9;
     padding: 15px;
+    cursor: pointer;
 }
 
 #multiplicar{
     background-color: #e9edc9;
     padding: 15px;
+    cursor: pointer;
 }
 
 #dividir{
     background-color: #e9edc9;
     padding: 15px;
+    cursor: pointer;
+}
+
+#somar:hover{
+    background-color: #d8dfad;
+}
+
+#subtrair:hover{
+    background-color: #d8dfad;
+}
+
+#multiplicar:hover{
+    background-color: #d8dfad;
+}
+
+#dividir:hover{
+    background-color: #d8dfad;
+}
+
+#somar:active {
+    transform: scale(0.95);
+}
+
+#subtrair:active {
+    transform: scale(0.95);
+}
+
+#multiplicar:active {
+    transform: scale(0.95);
+}
+
+#dividir:active {
+    transform: scale(0.95);
+}
+
+#resultado {
+    margin-top: 25px;
+    font-size: x-large;
 }
